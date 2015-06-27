@@ -31,10 +31,10 @@ db.once('open', function() { console.log('Mongodb connecté')})
 
 
 // ROUTES
-var router = express.Router();
-require('./routes/index')(router);
-require('./routes/list')(router);
-require('./routes/user')(router);
+require('./routes/index')(app);
+require('./routes/list')(app);
+require('./routes/user')(app);
+
 
 // SERVEUR
 if (local.env == 'development') {

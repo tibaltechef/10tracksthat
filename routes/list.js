@@ -1,13 +1,13 @@
 var slug  = require('slug');
 var Lists = require('../models/model_lists');
 
-module.exports = function (router) {
+module.exports = function (app) {
 
   /**
    * GET - /lists
    * @description Tableau des listes 
    */
-  router.get('/lists', function (req, res) {
+  app.get('/lists', function (req, res) {
     res.json({ 
       message : 'GET /lists OK'
     });
@@ -19,7 +19,7 @@ module.exports = function (router) {
    * @param  {String} name
    * @description Liste en fonction du nom
    */
-  router.get('/lists/:name', function (req, res) {
+  app.get('/lists/:name', function (req, res) {
     res.json({ 
       message : 'GET /lists OK'
     });
@@ -29,7 +29,7 @@ module.exports = function (router) {
    * POST - /lists
    * @description Ajout d'une liste
    */
-  router.post('/lists', function (req, res) {
+  app.post('/lists', function (req, res) {
 
     // @todo vérifier que l'user est connecté
 

@@ -1,13 +1,13 @@
 var Users = require('../models/model_users.js');
 
-module.exports = function (router) {
+module.exports = function (app) {
 
   /**
    * GET - /users/:username
    * @param {String} username
    * @description Infos d'un utilisateur
    */
-  router.get('/users/:username', function (req, res) {
+  app.get('/users/:username', function (req, res) {
       
   });
 
@@ -17,7 +17,7 @@ module.exports = function (router) {
    * @param {String} password
    * @description Ajout d'un utilisateur
    */
-  router.post('/users', function (req, res) {
+  app.post('/users', function (req, res) {
       
     if (req.body.username === undefined) {
       return res.status(400).send({ message : 'username non défini'});
@@ -25,9 +25,5 @@ module.exports = function (router) {
     if (req.body.password === undefined) {
       return res.status(400).send({ message : 'password non défini'});
     }
-
-    return res.json(
-      { message : 'POST /users OK'}
-    );
   });
 }

@@ -8,5 +8,6 @@
     "assets/components"
   ],
   "dependencies": {
+    "angular": "~1.4.1"
   }
 }

@@ -11,6 +11,7 @@ var tracksSchema = new Schema({
     youtube: {
       id: String,
       url: String
+    },
     deezer: {
       id : String,
       url : String

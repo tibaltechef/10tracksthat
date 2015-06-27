@@ -7,6 +7,6 @@ var usersSchema = new Schema({
   passport: String
 });
 
-UsersSchema.plugin(plm);
+usersSchema.plugin(plm);
 
 module.exports = mongoose.model('Users', usersSchema);

@@ -9,7 +9,7 @@ module.exports = function() {
   gulp.watch(paths.src.js + '/**/*', ['scripts']);
   gulp.watch(paths.src.css + '/**/*', ['styles']);
 
-  gulp.watch(paths.src.components + '/**/*', ['scripts', 'styles']);
+  gulp.watch(paths.src.components + '/**/*', ['libscripts', 'libstyles']);
   
   gulp.watch([
     paths.dist._ + '/**',
