@@ -1,0 +1,12 @@
+{
+  "name": "10songsthat",
+  "version": "0.0.1",
+  "description": "Site web 10songsthat",
+  "main": "app.js",
+  "ignore": [
+    "node_modules",
+    "assets/components"
+  ],
+  "dependencies": {
+  }
+}
