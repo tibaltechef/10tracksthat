@@ -1,0 +1,28 @@
+{% extends '../layout.html' %}
+
+{% block content %}
+  <form action="/list">
+    <label for="name">10 songs that what ?</label>
+    <input type="text" name="name" id="name">
+
+    {# todo: slug généré auto et affiché #}
+    <input readonly type="text" value="">
+
+    <label for="description">Description</label>
+    <textarea name="description" id="description"></textarea>
+
+    {# @see http://mbenford.github.io/ngTagsInput/demos #}
+    <label for="tags">Add some tags</label>
+    <tags-input ng-model="tags" id="tags"></tags-input>
+
+    <input type="submit" value="I'am ready">
+
+  </form>
+
+  <form action="/songs">
+    {# afficher quand form submit #}
+   
+     
+  </form>
+
+{% endblock %}

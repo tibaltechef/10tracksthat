@@ -4,32 +4,30 @@ var Lists = require('../models/model_lists');
 module.exports = function (app) {
 
   /**
-   * GET - /lists
+   * GET - /list
    * @description Tableau des listes 
    */
-  app.get('/lists', function (req, res) {
-    res.json({ 
-      message : 'GET /lists OK'
-    });
+  app.get('/createlist', function (req, res) {
+    res.render('list/create');
   });
 
 
   /**
-   * GET - /lists/:name
+   * GET - /list/:name
    * @param  {String} name
    * @description Liste en fonction du nom
    */
-  app.get('/lists/:name', function (req, res) {
+  app.get('/list/:name', function (req, res) {
     res.json({ 
-      message : 'GET /lists OK'
+      message : 'GET /list OK'
     });
   });
 
   /**
-   * POST - /lists
+   * POST - /list
    * @description Ajout d'une liste
    */
-  app.post('/lists', function (req, res) {
+  app.post('/list', function (req, res) {
 
     // @todo vérifier que l'user est connecté
 

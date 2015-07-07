@@ -1,0 +1,13 @@
+FRONT :
+
+  - formulaire login
+  - formulaire register
+  - formulaire ajout liste
+
+  - fiche user
+  - fiche liste
+
+BACK :
+  
+  - authentification
+  - mongoose les items

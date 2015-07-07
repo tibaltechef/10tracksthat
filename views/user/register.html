@@ -1,0 +1,24 @@
+{% extends '../layout.html' %}
+
+{% block content %}
+  <form action="/register">
+
+    <label for="email">What is your email ?</label>
+    <input type="text" name="email" id="email">
+
+    <label for="username">Choose an username</label>
+    <input type="text" name="username" id="username">
+
+    {# todo: verif temps réel de dispo avec le slug généré auto et affiché #}
+    <input readonly type="text" value="">
+    
+    <label for="password">Choose a password</label>
+    <input type="password" name="password" id="password">
+
+    <label for="passwordcheck">Once again</label>
+    <input type="password" name="passwordcheck" id="passwordcheck">
+
+    <input type="submit" value="Create account">
+  </form>
+  
+{% endblock %}
