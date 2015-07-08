@@ -8,7 +8,8 @@ var listSchema = new Schema({
   name: String,
   description: String,
   tags: [String],
-  vote: Number,
+  upVote: Number,
+  downVote: Number,
   date: { type: Date, default: Date.now },
   tracks: [
     {

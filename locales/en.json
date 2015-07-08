@@ -1,0 +1,26 @@
+{
+  "user-login-username": "Username",
+  "user-login-password": "Password",
+  "user-login-submit": "Log In",
+  "error-login-fail": "Incorrect username or password",
+  "error-login-missing-username": "Username is required",
+  "error-login-missing-password": "Password is required",
+  
+  "user-register-email": "Email",
+  "user-register-username": "Username",
+  "user-register-password": "Password",
+  "user-register-confirm": "Confirm password",
+  "user-register-submit": "Create account",
+  "error-register-missing-email" : "Email is required",
+  "error-register-missing-username" : "Username is required",
+  "error-register-missing-password" : "Password is required",
+  "error-register-password-check" : "Passwords are not the same",
+  "error-register-username-exists": "Sorry, this username is already taken",
+  
+  "list-create-info": "Create a list to add tracks",
+  "list-create-name": "10 songs that ... ?",
+  "list-create-description": "Description",
+  "list-create-tags": "Tags (genres, thematics or other)",
+  "list-create-submit": "Create my list",
+  "list-create-songs-infos": ""
+}

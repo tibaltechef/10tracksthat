@@ -8,6 +8,6 @@ FRONT :
   - fiche liste
 
 BACK :
-  
-  - authentification
-  - mongoose les items
+  - tester i18n sur les vues (ok pour bo)
+  - authentification @see https://github.com/tibaldev/mongodbauth
+  - mongoose les items @see https://github.com/tibaldev/mongodblog

@@ -6,7 +6,8 @@ var tracksSchema = new Schema({
   artist: String,
   title: String,
   description: String,
-  vote: Number,
+  upVote: Number,
+  downVote: Number,
   urls: {
     youtube: {
       id: String,

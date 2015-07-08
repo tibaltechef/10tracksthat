@@ -1,3 +1,10 @@
+/**
+ * Routes pour la gestion des listes
+ * /createlist (GET/POST)
+ * /createtracks (POST)
+ * /list/:name (GET)
+ */
+
 var slug  = require('slug');
 var Lists = require('../models/model_lists');
 
@@ -13,21 +20,10 @@ module.exports = function (app) {
 
 
   /**
-   * GET - /list/:name
-   * @param  {String} name
-   * @description Liste en fonction du nom
-   */
-  app.get('/list/:name', function (req, res) {
-    res.json({ 
-      message : 'GET /list OK'
-    });
-  });
-
-  /**
    * POST - /list
    * @description Ajout d'une liste
    */
-  app.post('/list', function (req, res) {
+  app.post('/createlist', function (req, res) {
 
     // @todo vérifier que l'user est connecté
 
@@ -50,6 +46,18 @@ module.exports = function (app) {
     list.save(function (err) {
       if (err) throw err;
       res.send(list);
+    });
+  });
+
+
+  /**
+   * GET - /list/:name
+   * @param  {String} name
+   * @description Liste en fonction du nom
+   */
+  app.get('/list/:name', function (req, res) {
+    res.json({ 
+      message : 'GET /list OK'
     });
   });
 }

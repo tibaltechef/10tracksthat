@@ -1,21 +1,24 @@
 {% extends '../layout.html' %}
 
 {% block content %}
+
+  <h2>{{ __('user-register-title') }}</h2>
+
   <form action="/register">
 
-    <label for="email">What is your email ?</label>
+    <label for="email">{{ __('user-register-email') }}</label>
     <input type="text" name="email" id="email">
 
-    <label for="username">Choose an username</label>
+    <label for="username">{{ __('user-register-username') }}</label>
     <input type="text" name="username" id="username">
 
     {# todo: verif temps réel de dispo avec le slug généré auto et affiché #}
     <input readonly type="text" value="">
     
-    <label for="password">Choose a password</label>
+    <label for="password">{{ __('user-register-password') }}</label>
     <input type="password" name="password" id="password">
 
-    <label for="passwordcheck">Once again</label>
+    <label for="passwordcheck">{{ __('user-register-confirm') }}</label>
     <input type="password" name="passwordcheck" id="passwordcheck">
 
     <input type="submit" value="Create account">
